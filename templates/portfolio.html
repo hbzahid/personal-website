@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+
+{% block content %}
+	<div class='col-xs-12 portfolio'>
+		<div class='col-sm-12 col-md-6'>
+			<div class="card-container">
+				<div id="card">
+					<div class="side front">
+						<div class='side-text'>
+							Blogging Engine
+						</div>
+						<img src="/images/code.jpg" alt="project code" width="302" height="302">
+					</div>
+					<div class="side back text-justify">
+						A Blogging engine and a wiki publishing app, whose backend was programmed with Google App Engine's webapp2 framework.
+						<br>
+						Core features implemented:
+						<ul>
+							<li>Form handling</li>
+							<li>User Authentication</li>
+							<li>Password hashing</li>
+							<li>HTTP Requests</li>
+							<li>Template inheritance</li>
+							<li>Caching</li>
+							<li>Strong consistency</li>
+						</ul>
+						<div class='buttons'>
+							<a href='http://myprojectslib.appspot.com' class='btn btn-primary btn-md'>View project</a>
+							<a class='btn btn-primary btn-md' href="https://github.com/hbzahid/blogging-app">View Github</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+{% endblock %}
+
+{% block js %}
+	<script src="https://cdn.rawgit.com/nnattawat/flip/v1.0.19/dist/jquery.flip.min.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			$('#card').flip({
+				axis: 'y',
+				trigger: 'hover'
+			});
+			$('#card').click(function() {
+				$(this).trigger('mouseenter');
+			});
+		});
+	</script>
+{% endblock%}

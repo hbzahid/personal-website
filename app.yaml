@@ -1,0 +1,35 @@
+application: hbzahid-website
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+
+- url: /stylesheets
+  static_dir: stylesheets
+
+- url: /js
+  static_dir: js
+
+- url: /images
+  static_dir: images
+
+- url: /fonts
+  static_dir: fonts
+
+- url: /font-awesome
+  static_dir: font-awesome
+
+- url: /less
+  static_dir: less
+
+- url: /.*
+  script: main.app
+
+libraries:
+- name: jinja2
+  version: latest
+
+- name: webapp2
+  version: latest
