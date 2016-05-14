@@ -4,12 +4,12 @@
 	<div class='col-xs-12 portfolio'>
 		<div class='col-sm-12 col-md-6'>
 			<div class="card-container">
-				<div id="card">
+				<div class="card">
 					<div class="side front">
-						<div class='side-text'>
+						<div class='side-text side-text-1'>
 							Blogging Engine
 						</div>
-						<img src="/images/code.jpg" alt="project code" width="302" height="302">
+						<img src="/images/blog.png" alt="project code" width="302" height="302">
 					</div>
 					<div class="side back text-justify">
 						A Blogging engine and a wiki publishing app, whose backend was programmed with Google App Engine's webapp2 framework.
@@ -32,6 +32,26 @@
 				</div>
 			</div>
 		</div>
+
+		<div class='col-sm-12 col-md-6'>
+			<div class="card-container">
+				<div class='card'>
+					<div class="side front">
+						<div class='side-text side-text-2'>
+							Invoicing App
+						</div>
+						<img src="/images/blog.png" alt="blog picture" width="302" height="302">
+					</div>
+					<div class="side back text-justify">
+						
+						<div class='buttons'>
+							<a href='http://hrmetrics.herokuapp.com/invoice' class='btn btn-primary btn-md'>View project</a>
+							<a class='btn btn-primary btn-md' href="https://github.com/hbzahid/invoice-app">View Github</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 {% endblock %}
 
@@ -39,11 +59,11 @@
 	<script src="https://cdn.rawgit.com/nnattawat/flip/v1.0.19/dist/jquery.flip.min.js"></script>
 	<script type="text/javascript">
 		$(function() {
-			$('#card').flip({
+			$('.card').flip({
 				axis: 'y',
 				trigger: 'hover'
 			});
-			$('#card').click(function() {
+			$('.card').click(function() {
 				$(this).trigger('mouseenter');
 			});
 		});

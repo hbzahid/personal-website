@@ -118,19 +118,19 @@ html, body, .container-fluid {
   position: relative;
   width: 302px;
 }
-#card {
+.card {
   height: 100%;
   position: absolute;
   width: 100%;
 }
-#card .side {
+.card .side {
   border-radius: 6px;
   height: 100%;
   position: absolute;
   overflow: hidden;
   width: 100%;
 }
-#card .back {
+.card .back {
   background: #eaeaed;
   line-height: 150%;
   color: #8e847d;
@@ -143,7 +143,13 @@ html, body, .container-fluid {
     text-align: center;
     margin: auto;
     font-size: 30px;
+}
+.side-text-1 {
     left: 12%;
+    top: 41%;
+}
+.side-text-2 {
+    left: 17%;
     top: 41%;
 }
 .buttons {

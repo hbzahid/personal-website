@@ -95,6 +95,6 @@ app = webapp2.WSGIApplication([webapp2.Route('/', handler=MainPage),
 							   webapp2.Route('/newpost', handler=NewPost),
 							   webapp2.Route(r'/blog/<post_id:[A-Za-z0-9_-]+>', handler=PostPage),
 							   webapp2.Route('/flush', handler=FlushCache),
-							   webapp2.Route('/portfolio', handler=Portfolio)
+							   webapp2.Route('/portfolio', handler=Portfolio),
                                ],
                               debug=True)

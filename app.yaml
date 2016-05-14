@@ -24,6 +24,10 @@ handlers:
 - url: /less
   static_dir: less
 
+- url: /resume
+  static_files: static/Resume.pdf
+  upload: static/Resume.pdf 
+
 - url: /.*
   script: main.app
 
