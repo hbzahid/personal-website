@@ -152,7 +152,29 @@ html, body, .container-fluid {
     left: 17%;
     top: 41%;
 }
+.side-text-3 {
+    left: 12%;
+    top: 40%
+}
+.side-text-4 {
+    left: 18%;
+    top: 41%
+}
 .buttons {
     left: 13%;
     position: absolute;
+}
+.btn-inv {
+    top:58%;
+}
+.btn-connect-four {
+    left: 32%;
+    top: 53%;   
+}
+.btn-personal-site {
+    left: 32%;
+    top: 40%;
+}
+.project {
+    margin-bottom: 40px;
 }
