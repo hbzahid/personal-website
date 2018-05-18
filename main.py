@@ -19,7 +19,7 @@ class Handler(webapp2.RequestHandler):
 
 class MainPage(Handler):
 	def get(self):
-		self.render('index.html')
+		self.render('front.html')
 
 def blog_key(name = 'default'):
 	return ndb.Key('blogs', name)
