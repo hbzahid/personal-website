@@ -1,5 +1,3 @@
-application: hbzahid-website
-version: 1
 runtime: python27
 api_version: 1
 threadsafe: true
@@ -8,9 +6,6 @@ handlers:
 
 - url: /assets
   static_dir: assets
-
-- url: /stylesheets
-  static_dir: stylesheets
 
 - url: /js
   static_dir: js
