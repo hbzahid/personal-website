@@ -1,5 +1,5 @@
 @import url("font-awesome.min.css");
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
 
 /*
 	Strata by HTML5 UP
@@ -1567,7 +1567,7 @@
 
 	body, input, select, textarea {
 		color: #443d36;
-		font-family: "Source Sans Pro", Helvetica, sans-serif;
+		font-family: "Roboto",  Helvetica, sans-serif;
 		font-size: 16pt;
 		font-weight: 400;
 		line-height: 1.75em;
@@ -1578,7 +1578,7 @@
 		-webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		-ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-		border-bottom: dotted 1px;
+		/*border-bottom: dotted 1px;*/
 		color: #49bf9d;
 		text-decoration: none;
 	}
@@ -1603,7 +1603,7 @@
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #787878;
+		/*color: #636262;*/
 		font-weight: 400;
 		line-height: 1em;
 		margin: 0 0 1em 0;
@@ -1715,10 +1715,29 @@
 		text-align: center;
 	}
 
+/* Custom styles START */
+	header div {
+		margin: 0 0 1.25em 1em;
+	}
+
+	header i {
+		padding-right: 0.75em;
+	}
+
+	header .icon-2 {
+		padding-left: 1em;
+	}
+
+	header h3 {
+		margin: 0 0 0.5em 0;
+	}
+
+/* Custom styles END */
+
 	header p {
-		color: #b2b2b2;
+		/*color: #828080;*/
 		position: relative;
-		margin: 0 0 1.5em 0;
+		margin: 0 0 0.5em 0;
 	}
 
 	header h2 + p {
@@ -1729,7 +1748,7 @@
 
 	header h3 + p {
 		font-size: 1.1em;
-		margin-top: -0.8em;
+		/*margin-top: -0.8em;*/
 		line-height: 1.5em;
 	}
 
@@ -2521,15 +2540,34 @@
 
 		#header h1 {
 			color: rgba(255, 255, 255, 0.5);
-			font-size: 1.35em;
+			font-size: 1.7em;
 			line-height: 1.75em;
 			margin: 0;
+		}
+
+		#header h2 {
+			color: rgba(255, 255, 255, 0.5);
+			font-size: 1.2em;
 		}
 
 		#header .image.avatar {
 			margin: 0 0 1em 0;
 			width: 6.25em;
 		}
+
+		/* Custom styles START */
+
+		#header .button {
+			color: #49bf9d !important;
+			border-color: #49bf9d;
+		}
+
+		#header .button:hover {
+			color: #7bc7b2 !important;
+			border-color: #7bc7b2;
+		}
+
+		/* Custom styles END */
 
 /* Footer */
 
@@ -2861,7 +2899,7 @@
 		/* Basic */
 
 			body, input, select, textarea {
-				font-size: 12pt;
+				font-size: 13pt;
 			}
 
 	}
